@@ -7,9 +7,9 @@ namespace WebProto.Models
 {
     public class AkatsukiModel 
     {
-        public void Copy(IMirror mirror)
+        public void Copy()
         {
-            
+            Roles
         }
     }
 }

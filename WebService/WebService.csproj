@@ -68,6 +68,8 @@
       <DependentUpon>AkatsukiDataBase.edmx</DependentUpon>
     </Compile>
     <Compile Include="IService1.cs" />
+    <Compile Include="MirrorClasses\IMirror.cs" />
+    <Compile Include="MirrorClasses\UserMirror.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service1.cs" />
     <Compile Include="tbl_calendario.cs">
@@ -125,6 +127,7 @@
   <ItemGroup>
     <Service Include="{508349B6-6B84-4DF5-91F0-309BEEBAD82D}" />
   </ItemGroup>
+  <ItemGroup />
   <Import Project="$(MSBuildBinPath)\Microsoft.CSharp.targets" />
   <PropertyGroup>
     <VSToolsPath Condition="'$(VSToolsPath)' == '' and '$(VisualStudioVersion)' != '' and '$(VisualStudioVersion)' != '11.0'">$(MSBuildExtensionsPath32)\Microsoft\VisualStudio\v$(VisualStudioVersion)</VSToolsPath>
