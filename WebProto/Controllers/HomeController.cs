@@ -48,15 +48,6 @@ namespace WebProto.Controllers
 
             Session["User"] = null;
 
-            //if (service.ValidateLogin(log.Email, log.Password))
-            //{
-            //    log.Name = "Master";
-            //    Session["User"] = log;
-
-            //    service.Close();
-            //    return RedirectToAction("Dashboard", "AccountPage");
-            //}
-
             service.Close();
             return RedirectToAction("Index");
         }
