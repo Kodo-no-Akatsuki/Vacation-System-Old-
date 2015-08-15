@@ -6,7 +6,8 @@ using System.Threading.Tasks;
 
 namespace WebService.MirrorClasses
 {
-    interface IMirror
+    public interface IMirror
     {
+
     }
 }
