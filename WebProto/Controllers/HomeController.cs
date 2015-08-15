@@ -26,11 +26,11 @@ namespace WebProto.Controllers
         }
 
         [HttpPost]
-        public RedirectToRouteResult Index(Account log)
+        public RedirectToRouteResult Index(User log)
         {
             Service1Client service = new Service1Client();
-            string[] user= service.ValidateLogin(log.Email, log.Password);
-
+            string[] user = service.ValidateLogin(log.Email, log.Password);
+            
             if (user != null)
             {
                 log.PrimerApellido = user[2].ToString();

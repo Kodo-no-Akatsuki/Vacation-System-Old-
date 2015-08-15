@@ -12,7 +12,7 @@ namespace WebProto.Controllers
         // GET: AccountPage
         public ViewResult Dashboard()
         {
-            return View("Profile", Session["User"] as Account);
+            return View("Profile", Session["User"] as User);
         }
 
         public RedirectToRouteResult LogOut()

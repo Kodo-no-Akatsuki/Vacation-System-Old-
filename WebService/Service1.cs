@@ -16,7 +16,7 @@ namespace WebService
         {
             return string.Format("You entered: {0}", value);
         }
-
+        
         public List<string> ValidateLogin(string email, string password)
         {
             AkatsukiEntities akatsuki = new AkatsukiEntities();
@@ -36,7 +36,7 @@ namespace WebService
                     userData.Add(user.fecha_creacion.ToString());
                     userData.Add(user.fecha_ingreso.ToString());
                     userData.Add(user.talento_humano.ToString());
-
+                    
                     return userData;
                 }
             }

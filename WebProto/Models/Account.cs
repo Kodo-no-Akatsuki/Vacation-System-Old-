@@ -6,7 +6,7 @@ using System.Web;
 
 namespace WebProto.Models
 {
-    public class Account
+    public class User
     {
         public string Email { get; set; }
 
