@@ -5,7 +5,7 @@ using System.Web;
 
 namespace WebProto.Models
 {
-    public class Roles : AkatsukiModel
+    public class Roles
     {
 
     }
