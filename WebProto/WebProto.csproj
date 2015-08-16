@@ -825,8 +825,15 @@
       <DependentUpon>Global.asax</DependentUpon>
     </Compile>
     <Compile Include="Models\Account.cs" />
-    <Compile Include="Models\AkatsukiModel.cs" />
+    <Compile Include="Models\Calendario.cs" />
+    <Compile Include="Models\Departamento.cs" />
+    <Compile Include="Models\Estatus.cs" />
+    <Compile Include="Models\Jerarquia.cs" />
+    <Compile Include="Models\LogVacaciones.cs" />
+    <Compile Include="Models\Permisos.cs" />
     <Compile Include="Models\Roles.cs" />
+    <Compile Include="Models\TipoDia.cs" />
+    <Compile Include="Models\Vacaciones.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service References\ServiceReference1\Reference.cs">
       <AutoGen>True</AutoGen>

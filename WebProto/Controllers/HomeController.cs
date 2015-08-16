@@ -22,7 +22,7 @@ namespace WebProto.Controllers
                 return RedirectToAction("Dashboard", "AccountPage");
             }
 
-            return View();                
+            return View();     
         }
 
         [HttpPost]

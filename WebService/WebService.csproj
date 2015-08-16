@@ -68,8 +68,13 @@
       <DependentUpon>AkatsukiDataBase.edmx</DependentUpon>
     </Compile>
     <Compile Include="IService1.cs" />
-    <Compile Include="MirrorClasses\IMirror.cs" />
+    <Compile Include="MirrorClasses\DepartamentoMirror.cs" />
+    <Compile Include="MirrorClasses\JerarquiaMirror.cs" />
+    <Compile Include="MirrorClasses\LogVacacionesMirror.cs" />
+    <Compile Include="MirrorClasses\PermisosMirror.cs" />
+    <Compile Include="MirrorClasses\TipoDiaMirror.cs" />
     <Compile Include="MirrorClasses\UserMirror.cs" />
+    <Compile Include="MirrorClasses\VacacionesMirror.cs" />
     <Compile Include="Properties\AssemblyInfo.cs" />
     <Compile Include="Service1.cs" />
     <Compile Include="tbl_calendario.cs">

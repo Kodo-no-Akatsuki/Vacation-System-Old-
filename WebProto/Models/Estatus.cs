@@ -5,10 +5,12 @@ using System.Web;
 
 namespace WebProto.Models
 {
-    public class Roles
+    public class Estatus
     {
-        public int RolesId { get; set; }
+        public int EstatusId { get; set; }
         public string Descripcion { get; set; }
         public bool Activo { get; set; }
+
+        //public void Copy(Esta)
     }
 }
