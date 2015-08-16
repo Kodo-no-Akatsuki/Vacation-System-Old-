@@ -6,7 +6,7 @@ using System.Threading.Tasks;
 
 namespace WebService.MirrorClasses
 {
-    class UserMirror
+    public class UserMirror
     {
         public string Email { get; set; }
         public string Password { get; set; }
