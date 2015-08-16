@@ -1,13 +1,14 @@
 ﻿using System;
 using System.Collections.Generic;
 using System.Linq;
-using System.Web;
+using System.Text;
+using System.Threading.Tasks;
 
-namespace WebProto.Models
+namespace WebService.MirrorClasses
 {
-    public class Roles
+    public class PermisosMirror
     {
-        public int RolesId { get; set; }
+        public int PermisosId { get; set; }
         public string Descripcion { get; set; }
         public bool Activo { get; set; }
     }

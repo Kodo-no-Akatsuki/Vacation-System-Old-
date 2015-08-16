@@ -14,9 +14,9 @@ namespace WebService.MirrorClasses
         public string SegundoNombre { get; set; }
         public string PrimerApellido { get; set; }
         public string SegundoApellido { get; set; }
-        public string FechaIngreso { get; set; }
-        public string FechaCreacion { get; set; }
-        public string Activo { get; set; }
-        public string TalentoHumano { get; set; }
+        public DateTime FechaIngreso { get; set; }
+        public DateTime FechaCreacion { get; set; }
+        public bool Activo { get; set; }
+        public int TalentoHumano { get; set; }
     }
 }
