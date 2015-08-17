@@ -809,6 +809,8 @@
     <Content Include="Content\widgets.html" />
     <Content Include="Content\xx.html" />
     <Content Include="Global.asax" />
+    <Content Include="Properties\DataSources\WebService.CompositeType.datasource" />
+    <Content Include="Properties\DataSources\WebService.MirrorClasses.UserMirror.datasource" />
     <None Include="Service References\ServiceReference1\configuration91.svcinfo" />
     <None Include="Service References\ServiceReference1\configuration.svcinfo" />
     <None Include="Service References\ServiceReference1\Reference.svcmap">
@@ -920,9 +922,6 @@
     <Content Include="Content\js\datatables\unit_testing\templates\js_data_mixed_types.php" />
     <Content Include="Content\js\datatables\unit_testing\templates\two_tables.php" />
     <Content Include="Content\js\maps\us-unemployment.json" />
-    <None Include="Service References\ServiceReference1\Arrays.xsd">
-      <SubType>Designer</SubType>
-    </None>
     <None Include="Service References\ServiceReference1\service.wsdl" />
     <None Include="Service References\ServiceReference1\service.xsd">
       <SubType>Designer</SubType>
@@ -930,9 +929,9 @@
     <None Include="Service References\ServiceReference1\service1.xsd">
       <SubType>Designer</SubType>
     </None>
-    <Content Include="Service References\ServiceReference1\WebProto.ServiceReference1.CompositeType.datasource">
-      <DependentUpon>Reference.svcmap</DependentUpon>
-    </Content>
+    <None Include="Service References\ServiceReference1\WebService.MirrorClasses.xsd">
+      <SubType>Designer</SubType>
+    </None>
     <None Include="Service References\ServiceReference1\WebService.xsd">
       <SubType>Designer</SubType>
     </None>

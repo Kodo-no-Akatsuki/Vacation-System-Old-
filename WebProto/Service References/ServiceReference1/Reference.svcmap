@@ -25,7 +25,7 @@
     <MetadataFile FileName="service.wsdl" MetadataType="Wsdl" ID="2e3eaee1-1493-4bf3-853a-3b6ae0211ad7" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/WebService/Service1/mex" />
     <MetadataFile FileName="service.xsd" MetadataType="Schema" ID="2d195ca9-564c-43d9-b8d5-b4e3aefb3fa4" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/WebService/Service1/mex" />
     <MetadataFile FileName="service1.xsd" MetadataType="Schema" ID="6b3aeb6c-fbf3-4c0d-b96f-f9fd91cd016f" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/WebService/Service1/mex" />
-    <MetadataFile FileName="Arrays.xsd" MetadataType="Schema" ID="9759a981-32a6-46b2-aabe-9c132b6338df" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/WebService/Service1/mex" />
+    <MetadataFile FileName="WebService.MirrorClasses.xsd" MetadataType="Schema" ID="85cfbbc5-34d3-40aa-8c3b-68a6441d69b1" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/WebService/Service1/mex" />
     <MetadataFile FileName="WebService.xsd" MetadataType="Schema" ID="cdc2b529-c6bc-41b1-bf98-7158e6c885fb" SourceId="1" SourceUrl="http://localhost:8733/Design_Time_Addresses/WebService/Service1/mex" />
   </Metadata>
   <Extensions>

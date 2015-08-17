@@ -7,6 +7,7 @@ using System.Web;
 using System.Web.Mvc;
 using WebProto.Models;
 using WebProto.ServiceReference1;
+using WebService.MirrorClasses;
 
 namespace WebProto.Controllers
 {
@@ -29,20 +30,15 @@ namespace WebProto.Controllers
         public RedirectToRouteResult Index(User log)
         {
             Service1Client service = new Service1Client();
-            string[] user = service.ValidateLogin(log.Email, log.Password);
+            UserMirror mirror = service.ValidateLogin(log.Email, log.Password);
             
-            if (user != null)
+            if (mirror != null)
             {
-                log.PrimerApellido = user[2].ToString();
-                log.PrimerNombre = user[3].ToString();
-                log.SegundoApellido = user[4].ToString();
-                log.SegundoNombre = user[5].ToString();
-                log.Activo = user[6];
-                log.FechaCreacion = user[7];
-                log.FechaIngreso = user[8];
-                log.TalentoHumano = user[9];
+                User user = new User();
 
-                Session["User"] = log;
+                user.Copy(mirror);
+
+                Session["User"] = user;
                 return RedirectToAction("Dashboard", "AccountPage");
             }
 

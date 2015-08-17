@@ -18,25 +18,25 @@ namespace WebService
             return string.Format("You entered: {0}", value);
         }
         
-        public List<string> ValidateLogin(string email, string password)
+        public UserMirror ValidateLogin(string email, string password)
         {
             AkatsukiEntities akatsuki = new AkatsukiEntities();
-            List<string> userData = new List<string>();
+            UserMirror userData = new UserMirror();
 
             foreach (tbl_usuarios user in akatsuki.tbl_usuarios.ToList())
             {
                 if (user.email == email && user.password == password)
                 {
-                    userData.Add(user.email);
-                    userData.Add(user.password);
-                    userData.Add(user.primer_apellido);
-                    userData.Add(user.primer_nombre);
-                    userData.Add(user.segundo_apellido);
-                    userData.Add(user.segundo_nombre);
-                    userData.Add(user.activo.ToString());
-                    userData.Add(user.fecha_creacion.ToString());
-                    userData.Add(user.fecha_ingreso.ToString());
-                    userData.Add(user.talento_humano.ToString());
+                    userData.Email = user.email;
+                    userData.Password = user.password;
+                    userData.PrimerNombre = user.primer_nombre;
+                    userData.SegundoNombre = user.segundo_nombre;
+                    userData.PrimerApellido = user.primer_apellido;
+                    userData.SegundoApellido = user.segundo_apellido;
+                    userData.TalentoHumano = user.talento_humano;
+                    userData.FechaIngreso = user.fecha_ingreso;
+                    userData.FechaCreacion = user.fecha_creacion;
+                    userData.Activo = user.activo;
                     
                     return userData;
                 }
