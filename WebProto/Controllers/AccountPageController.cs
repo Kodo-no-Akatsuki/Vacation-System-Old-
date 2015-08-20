@@ -16,6 +16,11 @@ namespace WebProto.Controllers
             return View("Profile", Session["User"] as Empleado);
         }
 
+        public ViewResult UserProfile()
+        {
+            return View(Session["User"] as Empleado);
+        }
+
         public RedirectToRouteResult LogOut()
         {
             Session["User"] = null;

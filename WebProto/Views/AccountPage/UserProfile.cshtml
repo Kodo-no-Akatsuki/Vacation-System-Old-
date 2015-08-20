@@ -1,5 +1,4 @@
-﻿@model WebService.Empleado
-
+﻿
 @{
     Layout = null;
 }
@@ -13,21 +12,21 @@
     <meta charset="utf-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1">
-    <title>Profile</title>
+
+    <title>Gentallela Alela! | </title>
+
     <!-- Bootstrap core CSS -->
+
     <link href="~/Content/css/bootstrap.min.css" rel="stylesheet">
     <link href="~/Content/fonts/css/font-awesome.min.css" rel="stylesheet">
     <link href="~/Content/css/animate.min.css" rel="stylesheet">
+
     <!-- Custom styling plus plugins -->
     <link href="~/Content/css/custom.css" rel="stylesheet">
-    <link rel="stylesheet" type="text/css" href="~/Content/css/maps/jquery-jvectormap-2.0.1.css" />
-    <link href="~/Content/css/icheck/flat/green.css" rel="stylesheet" />
-    <link href="~/Content/css/floatexamples.css" rel="stylesheet" type="text/css" />
+    <link href="~/Content/css/icheck/flat/green.css" rel="stylesheet">
+
+
     <script src="~/Content/js/jquery.min.js"></script>
-    <script src="~/Content/js/nprogress.js"></script>
-    <script>
-        NProgress.start();
-    </script>
 
     <!--[if lt IE 9]>
         <script src="../assets/js/ie8-responsive-file-warning.js"></script>
@@ -38,6 +37,7 @@
           <script src="https://oss.maxcdn.com/respond/1.4.2/respond.min.js"></script>
         <![endif]-->
 
+
 </head>
 <body class="nav-md">
 
@@ -47,7 +47,7 @@
             <div class="col-md-3 left_col">
                 <div class="left_col scroll-view">
                     <div class="navbar nav_title" style="border: 0;">
-                        <a href="index.html" class="site_title"><img src="~/Content/imgs/unilogo.png" class="uni-logo center-block"/><span></span></a>
+                        <a href="index.html" class="site_title"><img src="~/Content/imgs/unilogo.png" class="uni-logo center-block" /><span></span></a>
                     </div>
                     <div class="clearfix"></div>
                     <!-- menu prile quick info -->
@@ -57,7 +57,7 @@
                         </div>
                         <div class="profile_info">
                             <span>Bienvenido,</span>
-                            <h2>@ViewData.Model.User.PrimerNombre</h2>
+                            <h2>Test</h2>
                         </div>
                     </div>
                     <!-- /menu prile quick info -->
@@ -68,8 +68,8 @@
                             <h3>None</h3>
                             <ul class="nav side-menu">
                                 <li>
-                                    <a href="@Url.Action("Dashboard")"><i class="fa fa-home"></i>Inicio</a>
-                                   
+                                    <a href="#"><i class="fa fa-home"></i>Inicio</a>
+
                                 </li>
                                 <li>
                                     <a><i class="fa fa-edit"></i>Peticiones<span class="fa fa-chevron-down"></span></a>
@@ -84,18 +84,15 @@
                                     </ul>
                                 </li>
                                 <li>
-                                    <a href="@Url.Action("LogOut")"><i class="fa fa-sign-out"></i>Cerrar Sesion</a>
+                                    <a href="#"><i class="fa fa-sign-out"></i>Cerrar Sesion</a>
                                 </li>
                             </ul>
                         </div>
                         <div class="menu_section">
-                            <ul class="nav side-menu">
-                               
-                                
-                            </ul>
+                            <ul class="nav side-menu"></ul>
                         </div>
                     </div>
-                    <!-- /sidebar menu -->                 
+                    <!-- /sidebar menu -->
                 </div>
             </div>
             <!-- top navigation -->
@@ -108,14 +105,15 @@
                         <ul class="nav navbar-nav navbar-right">
                             <li class="">
                                 <a href="javascript:;" class="user-profile dropdown-toggle" data-toggle="dropdown" aria-expanded="false">
-                                    <img src="~/Content/images/img.png" alt="">@ViewData.Model.User.PrimerNombre @ViewData.Model.User.SegundoNombre
+                                    <img src="~/Content/images/img.png" alt="">Test Name
                                     <span class=" fa fa-angle-down"></span>
                                 </a>
                                 <ul class="dropdown-menu dropdown-usermenu animated fadeInDown pull-right">
                                     <li>
-                                        <a href="javascript:;">  
-                                        <span class="fa fa-user pull-right"></span>
-                                        <span>Perfil</span></a>
+                                        <a href="javascript:;">
+                                            <span class="fa fa-user pull-right"></span>
+                                            <span>Perfil</span>
+                                        </a>
                                     </li>
                                     <li>
                                         <a href="javascript:;">
@@ -131,7 +129,7 @@
                                     </li>
                                     <li>
                                         <!--<a href="login.html"><i class="fa fa-sign-out pull-right"></i> Log Out</a>-->
-                                        <a href="@Url.Action("LogOut")"><i class="fa fa-sign-out pull-right"></i>Cerrar Sesion</a>
+                                        <a href="#"><i class="fa fa-sign-out pull-right"></i>Cerrar Sesion</a>
                                 </ul>
                             </li>
                             <li role="presentation" class="dropdown">
@@ -147,14 +145,14 @@
                                                 <img src="~/Content/images/img.png" alt="Profile Image" />
                                             </span>
                                             <span>
-                                                <span>@ViewData.Model.User.PrimerNombre </span>
-                                                <span class="time">Hace 3 mins</span>
+                                                <span>Test</span>
+                                                <span class="time">3 mins ago</span>
                                             </span>
                                             <span class="message">
                                                 Lololol...
                                             </span>
                                         </a>
-                                    </li>                                  
+                                    </li>
                                     <li>
                                         <div class="text-center">
                                             <a>
@@ -172,53 +170,145 @@
             <!-- /top navigation -->
             <!-- page content -->
             <div class="right_col" role="main">
-                <!--Express information to add here :^)-->
-                <div class="row tile_count">
-                    <h2 class="center-block">Vacaciones</h2>
-                    <div class="animated flipInY col-md-2 col-sm-4 col-xs-4 tile_stats_count">
-                        <div class="left"></div>
-                        <div class="right">
-                            <span class="count_top"><i class="fa fa-calendar-o"></i> Vencidas</span>
-                            <div class="count red">2500</div>
-                            @*<span class="count_bottom"><i class="green">4% </i> From last Week</span>*@
+
+                <div class="">
+                    <div class="page-title">
+                        <div class="title_left">
+                            <h3>Perfil</h3>
+                        </div>
+
+                        <div class="title_right">
+                            <div class="col-md-5 col-sm-5 col-xs-12 form-group pull-right top_search">
+                                <div class="input-group">
+                                    <input type="text" class="form-control" placeholder="Buscar...">
+                                    <span class="input-group-btn">
+                                        <button class="btn btn-default" type="button">Ir</button>
+                                    </span>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                    <div class="animated flipInY col-md-2 col-sm-4 col-xs-4 tile_stats_count">
-                        <div class="left"></div>
-                        <div class="right">
-                            <span class="count_top"><i class="fa fa-clock-o"></i> Proporcionales</span>
-                            <div class="count red">123.50</div>
-                            @*<span class="count_bottom"><i class="green"><i class="fa fa-sort-asc"></i>3% </i> From last Week</span>*@
+                    <div class="clearfix"></div>
+
+                    <div class="row">
+                        <div class="col-md-12 col-sm-12 col-xs-12">
+                            <div class="x_panel">
+                              
+                                <div class="x_content">
+
+                                    <div class="col-md-3 col-sm-3 col-xs-12 profile_left">
+
+                                        <div class="profile_img">
+
+                                            <!-- end of image cropping -->
+                                            <div id="crop-avatar">
+                                                <!-- Current avatar -->
+                                                <div class="avatar-view" title="Cambiar foto de perfil">
+                                                    <img src="~/Content/images/img.png" alt="Avatar">
+                                                </div>
+
+                                                <!-- Cropping modal -->
+                                                <div class="modal fade" id="avatar-modal" aria-hidden="true" aria-labelledby="avatar-modal-label" role="dialog" tabindex="-1">
+                                                    <div class="modal-dialog modal-lg">
+                                                        <div class="modal-content">
+                                                            <form class="avatar-form" action="crop.php" enctype="multipart/form-data" method="post">
+                                                                <div class="modal-header">
+                                                                    <button class="close" data-dismiss="modal" type="button">&times;</button>
+                                                                    <h4 class="modal-title" id="avatar-modal-label">Cambiar foto de perfil</h4>
+                                                                </div>
+                                                                <div class="modal-body">
+                                                                    <div class="avatar-body">
+
+                                                                        <!-- Upload image and data -->
+                                                                        <div class="avatar-upload">
+                                                                            <input class="avatar-src" name="avatar_src" type="hidden">
+                                                                            <input class="avatar-data" name="avatar_data" type="hidden">
+                                                                            <label for="avatarInput">Imagen local</label>
+                                                                            <input class="avatar-input" id="avatarInput" name="avatar_file" type="file">
+                                                                        </div>
+
+                                                                        <!-- Crop and preview -->
+                                                                        <div class="row">
+                                                                            <div class="col-md-9">
+                                                                                <div class="avatar-wrapper"></div>
+                                                                            </div>
+                                                                            <div class="col-md-3">
+                                                                                <div class="avatar-preview preview-lg"></div>
+                                                                                <div class="avatar-preview preview-md"></div>
+                                                                                <div class="avatar-preview preview-sm"></div>
+                                                                            </div>
+                                                                        </div>
+
+                                                                        <div class="row avatar-btns">                                                                     
+                                                                            <div class="col-md-3 pull-right">
+                                                                                <button class="btn btn-primary btn-block avatar-save" type="submit">Guardar</button>
+                                                                            </div>
+                                                                        </div>
+                                                                    </div>
+                                                                </div>
+                                                                <!-- <div class="modal-footer">
+                                                                  <button class="btn btn-default" data-dismiss="modal" type="button">Close</button>
+                                                                </div> -->
+                                                            </form>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                                <!-- /.modal -->
+                                                <!-- Loading state -->
+                                                <div class="loading" aria-label="Loading" role="img" tabindex="-1"></div>
+                                            </div>
+                                            <!-- end of image cropping -->
+
+                                        </div>
+                                        <h3>Test User</h3>
+
+                                        <ul class="list-unstyled user_data">
+                                            <li>
+                                                <div class="fa fa-map-marker user-profile-icon" > San Francisco, California, USA </div> 
+                                            </li>
+
+                                            <li>
+                                                <i class="fa fa-briefcase user-profile-icon"> Artista</i> 
+                                            </li>
+
+                                            <li class="m-top-xs">
+                                                <i class="fa fa-external-link user-profile-icon"></i>
+                                                <a href="#" target="_blank">www.ejemplolol.com</a>
+                                            </li>
+                                        </ul>
+
+                                        <a class="btn btn-success"><i class="fa fa-edit m-right-xs"></i>Editar Perfil</a>
+                                        <br />
+
+                                       
+
+                                    </div>
+                                    <div class="col-md-9 col-sm-9 col-xs-12">
+                                        <!--Insert intelligent user info-->
+                                        <h2></h2>
+                                    </div>
+                                </div>
+                            </div>
                         </div>
                     </div>
-                           
-                   
-                <!--Data Page here :^)-->
+                </div>
+
               
+
             </div>
             <!-- /page content -->
         </div>
-            <!-- footer content -->
-            <footer class="">
-                <div class="footer-cont pull-right">
-                   
-                    <span class="pull-right">
-                        <b>Design by</b> <a href="https://github.com/Kodo-no-Akatsuki" target="_blank"><img src="~/Content/imgs/iconakatsuki.png" class="footer-img" width="50" height="40"/></a>
-                    </span>
-                </div>
-                <div class="clearfix"></div>
-            </footer>
-            <!-- /footer content -->
+
     </div>
+
     <div id="custom_notifications" class="custom-notifications dsp_none">
         <ul class="list-unstyled notifications clearfix" data-tabbed_notifications="notif-group"></ul>
         <div class="clearfix"></div>
         <div id="notif-group" class="tabbed_notifications"></div>
     </div>
+
     <script src="~/Content/js/bootstrap.min.js"></script>
-    <!-- gauge js -->
-    <script type="~/Content/text/javascript" src="~/Content/js/gauge/gauge.min.js"></script>
-    <script type="~/Content/text/javascript" src="~/Content/js/gauge/gauge_demo.js"></script>
+
     <!-- chart js -->
     <script src="~/Content/js/chartjs/chart.min.js"></script>
     <!-- bootstrap progress js -->
@@ -226,150 +316,76 @@
     <script src="~/Content/js/nicescroll/jquery.nicescroll.min.js"></script>
     <!-- icheck -->
     <script src="~/Content/js/icheck/icheck.min.js"></script>
-    <!-- daterangepicker -->
-    <script type="~/Content/text/javascript" src="js/moment.min.js"></script>
-    <script type="~/Content/text/javascript" src="js/datepicker/daterangepicker.js"></script>
+
     <script src="~/Content/js/custom.js"></script>
-    <!-- flot js -->
-    <!--[if lte IE 8]><script type="text/javascript" src="js/excanvas.min.js"></script><![endif]-->
-    <script type="~/Content/text/javascript" src="~/Content/js/flot/jquery.flot.js"></script>
-    <script type="~/Content/text/javascript" src="~/Content/js/flot/jquery.flot.pie.js"></script>
-    <script type="~/Content/text/javascript" src="~/Content/js/flot/jquery.flot.orderBars.js"></script>
-    <script type="~/Content/text/javascript" src="~/Content/js/flot/jquery.flot.time.min.js"></script>
-    <script type="~/Content/text/javascript" src="~/Content/js/flot/date.js"></script>
-    <script type="~/Content/text/javascript" src="~/Content/js/flot/jquery.flot.spline.js"></script>
-    <script type="~/Content/text/javascript" src="~/Content/js/flot/jquery.flot.stack.js"></script>
-    <script type="~/Content/text/javascript" src="~/Content/js/flot/curvedLines.js"></script>
-    <script type="~/Content/text/javascript" src="~/Content/js/flot/jquery.flot.resize.js"></script>
-    <script>
-        $(document).ready(function () {
-            // [17, 74, 6, 39, 20, 85, 7]
-            //[82, 23, 66, 9, 99, 6, 2]
-            var data1 = [[gd(2012, 1, 1), 17], [gd(2012, 1, 2), 74], [gd(2012, 1, 3), 6], [gd(2012, 1, 4), 39], [gd(2012, 1, 5), 20], [gd(2012, 1, 6), 85], [gd(2012, 1, 7), 7]];
 
-            var data2 = [[gd(2012, 1, 1), 82], [gd(2012, 1, 2), 23], [gd(2012, 1, 3), 66], [gd(2012, 1, 4), 9], [gd(2012, 1, 5), 119], [gd(2012, 1, 6), 6], [gd(2012, 1, 7), 9]];
-            $("#canvas_dahs").length && $.plot($("#canvas_dahs"), [
-                data1, data2
-            ], {
-                series: {
-                    lines: {
-                        show: false,
-                        fill: true
-                    },
-                    splines: {
-                        show: true,
-                        tension: 0.4,
-                        lineWidth: 1,
-                        fill: 0.4
-                    },
-                    points: {
-                        radius: 0,
-                        show: true
-                    },
-                    shadowSize: 2
-                },
-                grid: {
-                    verticalLines: true,
-                    hoverable: true,
-                    clickable: true,
-                    tickColor: "#d5d5d5",
-                    borderWidth: 1,
-                    color: '#fff'
-                },
-                colors: ["rgba(38, 185, 154, 0.38)", "rgba(3, 88, 106, 0.38)"],
-                xaxis: {
-                    tickColor: "rgba(51, 51, 51, 0.06)",
-                    mode: "time",
-                    tickSize: [1, "day"],
-                    //tickLength: 10,
-                    axisLabel: "Date",
-                    axisLabelUseCanvas: true,
-                    axisLabelFontSizePixels: 12,
-                    axisLabelFontFamily: 'Verdana, Arial',
-                    axisLabelPadding: 10
-                    //mode: "time", timeformat: "%m/%d/%y", minTickSize: [1, "day"]
-                },
-                yaxis: {
-                    ticks: 8,
-                    tickColor: "rgba(51, 51, 51, 0.06)",
-                },
-                tooltip: false
-            });
+    <!-- image cropping -->
+    <script src="~/Content/js/cropping/cropper.min.js"></script>
+    <script src="~/Content/js/cropping/main.js"></script>
 
-            function gd(year, month, day) {
-                return new Date(year, month - 1, day).getTime();
-            }
-        });
-    </script>
-    <!-- worldmap -->
-    <script type="text/javascript" src="js/maps/jquery-jvectormap-2.0.1.min.js"></script>
-    <script type="text/javascript" src="js/maps/gdp-data.js"></script>
-    <script type="text/javascript" src="js/maps/jquery-jvectormap-world-mill-en.js"></script>
-    <script type="text/javascript" src="js/maps/jquery-jvectormap-us-aea-en.js"></script>
+
+    <!-- daterangepicker -->
+    <script type="text/javascript" src="~/Content/js/moment.min.js"></script>
+    <script type="text/javascript" src="~/Content/js/datepicker/daterangepicker.js"></script>
+    <!-- moris js -->
+    <script src="~/Content/js/moris/raphael-min.js"></script>
+    <script src="~/Content/js/moris/morris.js"></script>
     <script>
         $(function () {
-            $('#world-map-gdp').vectorMap({
-                map: 'world_mill_en',
-                backgroundColor: 'transparent',
-                zoomOnScroll: false,
-                series: {
-                    regions: [{
-                        values: gdpData,
-                        scale: ['#E6F2F0', '#149B7E'],
-                        normalizeFunction: 'polynomial'
-                    }]
+            var day_data = [
+                {
+                    "period": "Jan",
+                    "Hours worked": 80
                 },
-                onRegionTipShow: function (e, el, code) {
-                    el.html(el.html() + ' (GDP - ' + gdpData[code] + ')');
+                {
+                    "period": "Feb",
+                    "Hours worked": 125
+                },
+                {
+                    "period": "Mar",
+                    "Hours worked": 176
+                },
+                {
+                    "period": "Apr",
+                    "Hours worked": 224
+                },
+                {
+                    "period": "May",
+                    "Hours worked": 265
+                },
+                {
+                    "period": "Jun",
+                    "Hours worked": 314
+                },
+                {
+                    "period": "Jul",
+                    "Hours worked": 347
+                },
+                {
+                    "period": "Aug",
+                    "Hours worked": 287
+                },
+                {
+                    "period": "Sep",
+                    "Hours worked": 240
+                },
+                {
+                    "period": "Oct",
+                    "Hours worked": 211
                 }
+            ];
+            Morris.Bar({
+                element: 'graph_bar',
+                data: day_data,
+                xkey: 'period',
+                hideHover: 'auto',
+                barColors: ['#26B99A', '#34495E', '#ACADAC', '#3498DB'],
+                ykeys: ['Hours worked', 'sorned'],
+                labels: ['Hours worked', 'SORN'],
+                xLabelAngle: 60
             });
         });
     </script>
-    <!-- skycons -->
-    <script src="~/Content/js/skycons/skycons.js"></script>
-    <script>
-        var icons = new Skycons({
-            "color": "#73879C"
-        }),
-            list = [
-                "clear-day", "clear-night", "partly-cloudy-day",
-                "partly-cloudy-night", "cloudy", "rain", "sleet", "snow", "wind",
-                "fog"
-            ],
-            i;
-
-        for (i = list.length; i--;)
-            icons.set(list[i], list[i]);
-
-        icons.play();
-    </script>
-    <!-- dashbord linegraph -->
-    <script>
-        var doughnutData = [
-            {
-                value: 30,
-                color: "#455C73"
-            },
-            {
-                value: 30,
-                color: "#9B59B6"
-            },
-            {
-                value: 60,
-                color: "#BDC3C7"
-            },
-            {
-                value: 100,
-                color: "#26B99A"
-            },
-            {
-                value: 120,
-                color: "#3498DB"
-            }
-        ];
-        var myDoughnut = new Chart(document.getElementById("canvas1").getContext("2d")).Doughnut(doughnutData);
-    </script>
-    <!-- /dashbord linegraph -->
     <!-- datepicker -->
     <script type="text/javascript">
         $(document).ready(function () {
@@ -443,11 +459,8 @@
             });
         });
     </script>
-    <script>
-        NProgress.done();
-    </script>
     <!-- /datepicker -->
-    <!-- /footer content -->
 </body>
 </html>
+
 
