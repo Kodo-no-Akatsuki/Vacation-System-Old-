@@ -4,6 +4,7 @@ using System.Linq;
 using System.Web;
 using System.Web.Mvc;
 using WebProto.Models;
+using WebService;
 
 namespace WebProto.Controllers
 {
@@ -12,7 +13,7 @@ namespace WebProto.Controllers
         // GET: AccountPage
         public ViewResult Dashboard()
         {
-            return View("Profile", Session["User"] as User);
+            return View("Profile", Session["User"] as Empleado);
         }
 
         public RedirectToRouteResult LogOut()

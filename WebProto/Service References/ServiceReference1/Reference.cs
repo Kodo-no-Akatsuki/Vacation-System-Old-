@@ -22,10 +22,10 @@ namespace WebProto.ServiceReference1 {
         System.Threading.Tasks.Task<string> GetDataAsync(int value);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/ValidateLogin", ReplyAction="http://tempuri.org/IService1/ValidateLoginResponse")]
-        WebService.MirrorClasses.UserMirror ValidateLogin(string email, string password);
+        WebService.Empleado ValidateLogin(string email, string password);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/ValidateLogin", ReplyAction="http://tempuri.org/IService1/ValidateLoginResponse")]
-        System.Threading.Tasks.Task<WebService.MirrorClasses.UserMirror> ValidateLoginAsync(string email, string password);
+        System.Threading.Tasks.Task<WebService.Empleado> ValidateLoginAsync(string email, string password);
         
         [System.ServiceModel.OperationContractAttribute(Action="http://tempuri.org/IService1/GetDataUsingDataContract", ReplyAction="http://tempuri.org/IService1/GetDataUsingDataContractResponse")]
         WebService.CompositeType GetDataUsingDataContract(WebService.CompositeType composite);
@@ -69,11 +69,11 @@ namespace WebProto.ServiceReference1 {
             return base.Channel.GetDataAsync(value);
         }
         
-        public WebService.MirrorClasses.UserMirror ValidateLogin(string email, string password) {
+        public WebService.Empleado ValidateLogin(string email, string password) {
             return base.Channel.ValidateLogin(email, password);
         }
         
-        public System.Threading.Tasks.Task<WebService.MirrorClasses.UserMirror> ValidateLoginAsync(string email, string password) {
+        public System.Threading.Tasks.Task<WebService.Empleado> ValidateLoginAsync(string email, string password) {
             return base.Channel.ValidateLoginAsync(email, password);
         }
         

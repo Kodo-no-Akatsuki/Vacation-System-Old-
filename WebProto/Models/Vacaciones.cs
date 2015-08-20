@@ -14,7 +14,7 @@ namespace WebProto.Models
         public DateTime FechaSalida { get; set; }
         public DateTime FechaEntrada { get; set; }
         public int DiasSolicitados { get; set; }
-        public DateTime FechaSolicitud { get; set; }//En la BaseDatos esta como int
+        public int FechaSolicitud { get; set; }//En la BaseDatos esta como int
         public DateTime FechaAprobacion { get; set; }
         public int EstatusId { get; set; }
 

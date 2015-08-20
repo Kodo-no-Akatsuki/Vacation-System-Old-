@@ -18,7 +18,7 @@ namespace WebService
         string GetData(int value);
 
         [OperationContract]
-        UserMirror ValidateLogin(string email, string password);
+        Empleado ValidateLogin(string email, string password);
 
         [OperationContract]
         CompositeType GetDataUsingDataContract(CompositeType composite);

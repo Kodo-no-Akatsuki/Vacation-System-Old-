@@ -1,5 +1,20 @@
 ﻿<?xml version="1.0" encoding="utf-8"?>
 <xs:schema xmlns:tns="http://schemas.datacontract.org/2004/07/WebService" elementFormDefault="qualified" targetNamespace="http://schemas.datacontract.org/2004/07/WebService" xmlns:xs="http://www.w3.org/2001/XMLSchema">
+  <xs:import namespace="http://schemas.datacontract.org/2004/07/WebService.MirrorClasses" />
+  <xs:complexType name="Empleado">
+    <xs:sequence>
+      <xs:element xmlns:q1="http://schemas.datacontract.org/2004/07/WebService.MirrorClasses" minOccurs="0" name="Departamento" nillable="true" type="q1:ArrayOfDepartamentoMirror" />
+      <xs:element xmlns:q2="http://schemas.datacontract.org/2004/07/WebService.MirrorClasses" minOccurs="0" name="Jerarquias" nillable="true" type="q2:ArrayOfJerarquiaMirror" />
+      <xs:element xmlns:q3="http://schemas.datacontract.org/2004/07/WebService.MirrorClasses" minOccurs="0" name="LogVacaciones" nillable="true" type="q3:ArrayOfLogVacacionesMirror" />
+      <xs:element xmlns:q4="http://schemas.datacontract.org/2004/07/WebService.MirrorClasses" minOccurs="0" name="Permisos" nillable="true" type="q4:ArrayOfPermisosMirror" />
+      <xs:element xmlns:q5="http://schemas.datacontract.org/2004/07/WebService.MirrorClasses" minOccurs="0" name="Roles" nillable="true" type="q5:ArrayOfRolesMirror" />
+      <xs:element xmlns:q6="http://schemas.datacontract.org/2004/07/WebService.MirrorClasses" minOccurs="0" name="Status" nillable="true" type="q6:ArrayOfStatusMirror" />
+      <xs:element xmlns:q7="http://schemas.datacontract.org/2004/07/WebService.MirrorClasses" minOccurs="0" name="TipoDia" nillable="true" type="q7:ArrayOfTipoDiaMirror" />
+      <xs:element xmlns:q8="http://schemas.datacontract.org/2004/07/WebService.MirrorClasses" minOccurs="0" name="User" nillable="true" type="q8:UserMirror" />
+      <xs:element xmlns:q9="http://schemas.datacontract.org/2004/07/WebService.MirrorClasses" minOccurs="0" name="Vacaciones" nillable="true" type="q9:ArrayOfVacacionesMirror" />
+    </xs:sequence>
+  </xs:complexType>
+  <xs:element name="Empleado" nillable="true" type="tns:Empleado" />
   <xs:complexType name="CompositeType">
     <xs:sequence>
       <xs:element minOccurs="0" name="BoolValue" type="xs:boolean" />

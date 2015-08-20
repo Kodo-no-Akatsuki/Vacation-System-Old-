@@ -67,6 +67,7 @@
       <DesignTime>True</DesignTime>
       <DependentUpon>AkatsukiDataBase.edmx</DependentUpon>
     </Compile>
+    <Compile Include="Empleado.cs" />
     <Compile Include="IService1.cs" />
     <Compile Include="MirrorClasses\CalendarMirror.cs" />
     <Compile Include="MirrorClasses\DepartamentoMirror.cs" />

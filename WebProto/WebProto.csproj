@@ -811,6 +811,7 @@
     <Content Include="Global.asax" />
     <Content Include="Properties\DataSources\WebService.CompositeType.datasource" />
     <Content Include="Properties\DataSources\WebService.MirrorClasses.UserMirror.datasource" />
+    <Content Include="Properties\DataSources\WebService.Empleado1.datasource" />
     <None Include="Service References\ServiceReference1\configuration91.svcinfo" />
     <None Include="Service References\ServiceReference1\configuration.svcinfo" />
     <None Include="Service References\ServiceReference1\Reference.svcmap">
